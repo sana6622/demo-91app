@@ -1,0 +1,410 @@
+.swiper {
+  z-index: -1;
+  width: 100%;
+  /*height: calc(100vh-100px);*/
+}
+
+.swiper-slide {
+  color: white;
+  background: linear-gradient(black, rgba(255, 0, 0, 0.575));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .slide-main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .slide-des {
+      p {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      .slide-case {
+        width: 100px;
+        background-color: red;
+        font-size: 16px;
+        border-radius: 30px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 12px;
+        margin-top: 20px;
+      }
+
+      h2 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+    }
+
+    .slide-img {
+      img {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
+
+
+
+  .slide-btn {
+    border: 3px solid white;
+    width: 150px;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+
+    a {
+      display: block;
+      color: white
+    }
+  }
+}
+
+.brand {
+  background-color: #f5f9fc;
+  padding-bottom: 20px;
+
+  .brand-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+
+    img {
+      width: 400px;
+      margin-left: 10px;
+    }
+
+    .brand-des {
+      text-align: center;
+      margin-top: 30px;
+
+      .brand-h3 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 24px;
+        color: $mainGrey;
+        padding-right: 30px;
+        padding-left: 30px;
+
+      }
+    }
+  }
+
+  .barnd-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    a {
+      flex: 25% 0 0;
+      margin: 5px;
+      width: 30%;
+
+      img {
+        transform: scale(1);
+        transition: transform;
+        width: 100%;
+
+        &:hover {
+          transform: scale(0.8)
+        }
+      }
+    }
+  }
+}
+
+.main {
+  color: $mainblack;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 50px;
+
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+
+  .main-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .main-des {
+      margin-top: 10px;
+      position: relative;
+
+
+      h3 {
+        font-size: 26px;
+        font-weight: 600;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        position: relative;
+
+        span {
+          font-size: 16px;
+          color: $mainGrey;
+          border: 1px solid $mainGrey;
+          position: absolute;
+          border-radius: 5px;
+          padding: 5px 10px;
+          margin-left: 20px;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+        color: $mainGrey;
+      }
+
+      li i {
+        color: rgb(228, 20, 20);
+        margin-right: 5px;
+
+      }
+
+      .main-more {
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        color: $mainGrey;
+
+        p {
+          display: inline;
+          border-bottom: 2px solid red;
+          margin-right: 5px;
+        }
+      }
+
+      .main-more:hover {
+        i {
+          animation: run 2s;
+        }
+      }
+
+
+    }
+  }
+}
+
+
+
+
+@media only screen and (min-width:576px) {}
+
+@media only screen and (min-width:661px) {
+  .brand {
+
+    .barnd-list {
+      a {
+        flex: 20% 0 1;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .slide-main {
+    .slide-img {
+      position: relative;
+      width: 50%;
+
+      &::before {
+        content: ' ';
+        width: 100px;
+        height: 100px;
+        border-left: 10px solid rgb(255, 240, 240);
+        border-top: 10px solid rgb(255, 240, 240);
+        z-index: 99;
+        position: absolute;
+        top: 30px;
+        left: -20px;
+      }
+
+      &::after {
+        content: ' ';
+        width: 100px;
+        height: 100px;
+        border-right: 10px solid rgb(255, 240, 240);
+        border-bottom: 10px solid rgb(255, 240, 240);
+        z-index: 99;
+        position: absolute;
+        bottom: 20px;
+        right: -20px;
+      }
+
+      img {
+        width: 50%;
+
+      }
+    }
+
+    .slide-des {
+      margin-top: 50px;
+    }
+  }
+
+  .brand {
+    .barnd-list {
+      a {
+        flex: 16% 0 1;
+      }
+    }
+  }
+
+  .main {
+    & div:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+
+    .main-section {
+      flex-direction: row;
+
+      img {
+        width: 50%;
+      }
+
+      .main-des {
+        width: 50%;
+        margin-left: 20px;
+
+
+        li {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+
+      }
+
+    }
+  }
+
+
+}
+
+
+
+
+@media only screen and (min-width:992px) {
+  .slide-des {
+    margin-top: 100px;
+  }
+
+  .brand {
+    .brand-main {
+      flex-direction: row;
+
+      img {
+        width: 50%;
+      }
+
+      .brand-des {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+
+        h3 {
+          font-size: 28px;
+        }
+
+        p {
+          text-align: left;
+          padding: 0;
+          font-size: 16px;
+        }
+
+      }
+
+    }
+
+    .barnd-list {
+      a {
+        flex: 14% 0 1;
+      }
+    }
+  }
+
+  .main {
+    .main-des {
+      width: 50%;
+      margin-left: 20px;
+
+      p {
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+
+      ul li {
+        font-size: 18px;
+        padding-top: 5px;
+
+
+      }
+
+      .main-more {
+        bottom: 30px;
+        right: 50px;
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width:1200px) {
+  .brand {
+
+    .brand-h3 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+
+      h3 {
+        margin-right: 20px;
+      }
+    }
+  }
+
+}
