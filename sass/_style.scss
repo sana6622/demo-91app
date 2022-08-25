@@ -10,7 +10,7 @@
     box-shadow: 0px 10px 10px -5px rgba(208, 109, 109, 0.5);
     border-radius: 35px;
     margin-left: 10px;
-    padding: 13px 28px;
+    padding: 13px 28px;    
   }
 
   &:hover {
@@ -83,6 +83,7 @@
   animation-iteration-count: 1;
 }
 
+
 @keyframes run {
   0% {
     transform: translateX(0px)
@@ -98,10 +99,9 @@
 
 }
 
-
-
-
-
+.no-drop {
+  cursor:no-drop
+}
 
 /**/
 mt-0 {
