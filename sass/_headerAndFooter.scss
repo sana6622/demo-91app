@@ -5,7 +5,10 @@
   color: $mainblack;
 }
 
+
+
 .header {
+  padding: 10px 0px;
   width: 100%;
   position: sticky;
   background-color: #fff;
@@ -16,12 +19,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;   
 
     .fa-solid {
       font-size: 35px;
       margin-right: 10px;
     }
-
+    h1{
+      font-size: 38px;
+      color:$mainRed;
+      font-weight: 900;
+     
+    }
+  
     .logo img {
       width: 150px;
     }

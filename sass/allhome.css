@@ -266,6 +266,7 @@ mt-0 {
 }
 
 .header {
+  padding: 10px 0px;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
@@ -277,10 +278,16 @@ mt-0 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 .header .header-title .fa-solid {
   font-size: 35px;
   margin-right: 10px;
+}
+.header .header-title h1 {
+  font-size: 38px;
+  color: #e7462B;
+  font-weight: 900;
 }
 .header .header-title .logo img {
   width: 150px;
